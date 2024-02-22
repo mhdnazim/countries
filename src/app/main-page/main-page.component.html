@@ -1,0 +1,50 @@
+<div class="row text-light w-100 ">
+    <div class="col-lg-6 p-5 ">
+
+        <h1>Welcome</h1>
+
+
+        <p class="p text-secondary">Explore the world wide countries at your finger tip...Scroll down to See the
+            countries in the world</p>
+
+
+
+
+    </div>
+    <div class="col-lg-6 p-5 text-center ">
+
+        <img class="img-fluid max-width-100% height-auto mt-5"
+            src="https://i.postimg.cc/TPJS4hgJ/World-Flag-map-Nell-L-removebg-preview.png" alt="" height="100%">
+
+
+
+
+    </div>
+</div>
+<!-- ========================================================================== -->
+
+
+
+<!-- ===================================================== -->
+
+<div class="row mt-5 m-5 mb-5">
+
+    <div id="anim" *ngFor="let i of filmList" class="card shadow col-lg-3 m-auto text-light" style="width: 16rem;">
+        <!-- <a  style="text-decoration: none;">
+        <img  src="https://flagcdn.com/w320/cy.png" class="card-img-top" alt="...">
+      </a> -->
+
+        <div class="Places card ">
+            <a routerLink="single/{{i.area}}"><img [src]="i.flags.png" alt="No image" class="img-card">
+                <div class="overlay">
+                    <div class="text">{{i.name.common}}</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+</div>
